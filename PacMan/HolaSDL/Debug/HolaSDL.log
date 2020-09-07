@@ -1,0 +1,44 @@
+﻿  Texture.cpp
+  StateMachine.cpp
+  SmartGhost2p0.cpp
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\smartghost2p0.cpp(86): warning C4018: '<': no coinciden signed/unsigned
+  PlayState.cpp
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(403): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(407): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(414): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(417): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(423): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(424): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(425): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(426): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(442): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(448): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(455): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(458): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(459): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(460): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(461): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(464): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(465): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(466): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(467): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(473): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\playstate.cpp(474): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  PauseState.cpp
+  PacManObject.cpp
+  PacMan2p0.cpp
+  MenuState.cpp
+  main.cpp
+  Ghost2p0.cpp
+  GameState.cpp
+  GameObject.cpp
+  GameMap2p0.cpp
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\gamemap2p0.cpp(78): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\gamemap2p0.cpp(79): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  GameCharacter.cpp
+  Game2p0.cpp
+c:\users\juans\desktop\my_games\pacman-tick\pacman\pacman\holasdl\game2p0.cpp(26): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  EndState.cpp
+  Button.cpp
+  Generando código...
+  HolaSDL.vcxproj -> C:\Users\juans\Desktop\MY_GAMES\PacMan-tick\PacMan\PacMan\bin\HolaSDLDebug.exe

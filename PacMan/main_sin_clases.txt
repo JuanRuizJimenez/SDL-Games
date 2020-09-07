@@ -1,0 +1,153 @@
+
+#include "SDL.h"
+#include "SDL_image.h"
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main(int argc, char* argv[]){
+	SDL_Window* window = nullptr;
+	SDL_Renderer* renderer = nullptr;
+	const int winWidth = 800;
+	const int winHeight = 600;
+	int winX, winY;
+	winX = winY = SDL_WINDOWPOS_CENTERED;
+
+	SDL_Init(SDL_INIT_EVERYTHING);
+	window = SDL_CreateWindow("My first test with SDL", winX, winY, winWidth, winHeight, SDL_WINDOW_SHOWN);
+	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+	if (window == nullptr || renderer == nullptr)
+		cout << "Error with SDL\n";
+	else {
+		//CREACION DE TEXTURAS
+		//Fondo
+		SDL_Texture* texture;
+		string filename = "..\\images\\background1.png";
+		SDL_Surface* surface = IMG_Load(filename.c_str());
+		texture = SDL_CreateTextureFromSurface(renderer, surface);
+		SDL_FreeSurface(surface);
+		//Perro
+		SDL_Texture* texture2;
+		string filename2 = "..\\images\\dog.png";
+		SDL_Surface* surface2 = IMG_Load(filename2.c_str());
+		texture2 = SDL_CreateTextureFromSurface(renderer, surface2);
+		SDL_FreeSurface(surface2);
+
+		//---Para saber el tamaño de la textura
+		//---Sources
+		int textW, textH; 
+		SDL_QueryTexture(texture2, nullptr, nullptr, &textW, &textH);
+		int SrcCellW = textW / 6;
+		int SrcCellH = textH / 1;
+
+		SDL_Rect srcRect;
+		srcRect.x = 0;
+		srcRect.y = 0;
+		srcRect.w = SrcCellW;
+		srcRect.h = SrcCellH;
+
+		//Helicoptero
+		SDL_Texture* texture3;
+		string filename3 = "..\\images\\helicopter.png";
+		SDL_Surface* surface3 = IMG_Load(filename3.c_str());
+		texture3 = SDL_CreateTextureFromSurface(renderer, surface3);
+		SDL_FreeSurface(surface3);
+
+		//---Para saber el tamaño de la textura
+		//---Sources
+		int textW2, textH2;
+		SDL_QueryTexture(texture3, nullptr, nullptr, &textW2, &textH2);
+		int SrcCellW2 = textW2 / 5;
+		int SrcCellH2 = textH2 / 1;
+
+		SDL_Rect srcRect2;
+		srcRect2.x = 0;
+		srcRect2.y = 0;
+		srcRect2.w = SrcCellW2;
+		srcRect2.h = SrcCellH2;
+
+		//---Destinos Perro
+		int DestCellW = winWidth / 8;
+		int DestCellH = winHeight / 6;
+		
+		SDL_Rect destRect;
+		destRect.x = 1 * DestCellW;
+		destRect.y = 4 * DestCellH;
+		destRect.w = DestCellW;
+		destRect.h = DestCellH;
+
+		//---Destinos Helicoptero
+		int DestCellW2 = winWidth / 8;
+		int DestCellH2 = winHeight / 6;
+
+		SDL_Rect destRect2;
+		destRect2.x = 6 * DestCellW2;
+		destRect2.y = 1 * DestCellH2;
+		destRect2.w = DestCellW2;
+		destRect2.h = DestCellH2;
+
+		//Definicion de color de fondo
+		SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+		
+		//Logica de pintado
+		SDL_Event event;
+		bool exit = false;
+		bool muevePerro = true;
+		bool mueveHelic = true;
+		while (!exit) {
+			//Comprobamos eventos
+			while (SDL_PollEvent(&event) && !exit) {
+				if (event.type == SDL_QUIT) {
+					exit = true;
+				}
+				else if (event.type == SDL_KEYDOWN) {
+					if (event.key.keysym.sym == SDLK_d) {
+						muevePerro = !muevePerro;
+					}
+					else if (event.key.keysym.sym == SDLK_h) {
+						mueveHelic = !mueveHelic;
+					}
+				}
+			}
+			//Limpiamos y mostramos
+			SDL_RenderClear(renderer);
+			SDL_RenderCopy(renderer, texture, nullptr, nullptr);
+			SDL_RenderCopy(renderer, texture2, &srcRect, &destRect);
+			SDL_RenderCopy(renderer, texture3, &srcRect2, &destRect2);
+			SDL_RenderPresent(renderer);
+			//Tiempo de espera
+			SDL_Delay(250);
+			//Actualizacion de imagen y posicion
+			//---Perro
+			if (muevePerro) {
+				srcRect.x += SrcCellW;
+				if (srcRect.x == 7 * SrcCellW) {
+					srcRect.x = 0;
+				}
+				destRect.x += DestCellW;
+				if (destRect.x == 9 * DestCellW) {
+					destRect.x = 0;
+				}
+			}
+			//---Helicoptero
+			if (mueveHelic) {
+				srcRect2.x += SrcCellW2;
+				if (srcRect2.x == 6 * SrcCellW2) {
+					srcRect2.x = 0;
+				}
+				destRect2.x -= DestCellW2;
+				if (destRect2.x == -1 * DestCellW2) {
+					destRect2.x = 8 * DestCellW2;
+				}
+			}
+		}
+
+		//Destruccion de memoria dinamica
+		SDL_DestroyRenderer(renderer);
+		SDL_DestroyWindow(window);
+		
+	}
+	SDL_Quit();
+	return 0;
+}

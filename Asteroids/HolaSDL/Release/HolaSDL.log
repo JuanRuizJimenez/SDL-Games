@@ -1,0 +1,112 @@
+﻿  AcelerationInputComponent.cpp
+  AcelerationInputComponent2.cpp
+  AleatoryPhysicsComponent.cpp
+AleatoryPhysicsComponent.cpp(8): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+AleatoryPhysicsComponent.cpp(20): warning C4244: '=': conversión de 'clock_t' a 'float'; posible pérdida de datos
+  Asteroid.cpp
+  AsteroidsManager.cpp
+AsteroidsManager.cpp(8): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+AsteroidsManager.cpp(44): warning C4018: '<': no coinciden signed/unsigned
+AsteroidsManager.cpp(70): warning C4018: '<': no coinciden signed/unsigned
+AsteroidsManager.cpp(163): warning C4018: '<': no coinciden signed/unsigned
+AsteroidsManager.cpp(97): warning C4101: 'fightr': variable local sin referencia
+AsteroidsManager.cpp(173): warning C4018: '<': no coinciden signed/unsigned
+  BadgeTimer.cpp
+  BasicMotionPhysics.cpp
+  Bonus.cpp
+Bonus.cpp(8): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  BonusManager.cpp
+BonusManager.cpp(55): warning C4101: 'bll': variable local sin referencia
+  Bullet.cpp
+  BulletsManager.cpp
+  CircularMotionPhysicsComponent.cpp
+  CollisionManager.cpp
+CollisionManager.cpp(22): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+CollisionManager.cpp(38): warning C4018: '<': no coinciden signed/unsigned
+CollisionManager.cpp(53): warning C4018: '<': no coinciden signed/unsigned
+CollisionManager.cpp(54): warning C4018: '<': no coinciden signed/unsigned
+CollisionManager.cpp(83): warning C4018: '<': no coinciden signed/unsigned
+  Collisions.cpp
+  ComponentSwitcher.cpp
+  Container.cpp
+Container.cpp(8): warning C4018: '<': no coinciden signed/unsigned
+Container.cpp(13): warning C4018: '<': no coinciden signed/unsigned
+Container.cpp(18): warning C4018: '<': no coinciden signed/unsigned
+  ExampleGame.cpp
+ExampleGame.cpp(225): warning C4018: '<': no coinciden signed/unsigned
+  Fighter.cpp
+  FightersManager.cpp
+FightersManager.cpp(31): warning C4244: 'argumento': conversión de 'double' a 'Uint32'; posible pérdida de datos
+FightersManager.cpp(32): warning C4305: 'argumento': truncamiento de 'int' a 'Uint8'
+FightersManager.cpp(32): warning C4309: 'argumento': truncamiento de valor constante
+FightersManager.cpp(33): warning C4244: 'argumento': conversión de 'double' a 'Uint32'; posible pérdida de datos
+  Font.cpp
+  Compilando...
+  FullRenderer.cpp
+  GameCtrlInputComponent.cpp
+  GameManager.cpp
+GameManager.cpp(91): warning C4101: 'rect': variable local sin referencia
+  GameMsgRenderer.cpp
+  GameObject.cpp
+  GunInputComponent.cpp
+GunInputComponent.cpp(23): warning C4244: '=': conversión de 'clock_t' a 'float'; posible pérdida de datos
+  ImageRenderer.cpp
+  InputComponent.cpp
+  LifeBar.cpp
+  main.cpp
+  MiniGunInputComponent.cpp
+MiniGunInputComponent.cpp(17): warning C4244: '=': conversión de 'clock_t' a 'float'; posible pérdida de datos
+MiniGunInputComponent.cpp(58): warning C4018: '<': no coinciden signed/unsigned
+  Music.cpp
+  Observable.cpp
+  Observer.cpp
+  PhysicsComponent.cpp
+  RenderComponent.cpp
+  Resources.cpp
+  RotationInputComponent.cpp
+  RotationPhysicsComponent.cpp
+  ScoreRenderer.cpp
+  Compilando...
+  SDLGame.cpp
+  ShootBar.cpp
+  SkeletonRenderer.cpp
+SkeletonRenderer.cpp(42): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+SkeletonRenderer.cpp(41): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+SkeletonRenderer.cpp(44): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+SkeletonRenderer.cpp(43): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+SkeletonRenderer.cpp(46): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+SkeletonRenderer.cpp(45): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+SkeletonRenderer.cpp(48): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+SkeletonRenderer.cpp(47): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+SkeletonRenderer.cpp(53): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+SkeletonRenderer.cpp(61): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+  SoundEffect.cpp
+  SoundManager.cpp
+  StarWarsBulletManager.cpp
+StarWarsBulletManager.cpp(32): warning C4018: '<': no coinciden signed/unsigned
+StarWarsBulletManager.cpp(39): warning C4018: '<': no coinciden signed/unsigned
+StarWarsBulletManager.cpp(48): warning C4018: '>': no coinciden signed/unsigned
+StarWarsBulletManager.cpp(62): warning C4018: '>': no coinciden signed/unsigned
+StarWarsBulletManager.cpp(76): warning C4018: '>': no coinciden signed/unsigned
+StarWarsBulletManager.cpp(90): warning C4018: '>': no coinciden signed/unsigned
+StarWarsBulletManager.cpp(107): warning C4018: '<': no coinciden signed/unsigned
+StarWarsBulletManager.cpp(117): warning C4018: '<': no coinciden signed/unsigned
+StarWarsBulletManager.cpp(145): warning C4018: '<': no coinciden signed/unsigned
+StarWarsBulletManager.cpp(152): warning C4101: 'ast': variable local sin referencia
+StarWarsBulletManager.cpp(195): warning C4018: '<': no coinciden signed/unsigned
+  Texture.cpp
+  Vector2D.cpp
+  XboxController.cpp
+XboxController.cpp(16): warning C4018: '<': no coinciden signed/unsigned
+XboxController.cpp(35): warning C4018: '<': no coinciden signed/unsigned
+XboxController.cpp(47): warning C4018: '<': no coinciden signed/unsigned
+XboxController.cpp(76): warning C4018: '<': no coinciden signed/unsigned
+XboxController.cpp(116): warning C4244: 'return': conversión de 'double' a 'int'; posible pérdida de datos
+XboxController.cpp(120): warning C4244: 'return': conversión de 'double' a 'int'; posible pérdida de datos
+XboxController.cpp(132): warning C4244: 'return': conversión de 'double' a 'int'; posible pérdida de datos
+XboxController.cpp(136): warning C4244: 'return': conversión de 'double' a 'int'; posible pérdida de datos
+     Creando biblioteca D:\UNI_2_2\TPV\ASTEROIDS\bin\HolaSDLRelease.lib y objeto D:\UNI_2_2\TPV\ASTEROIDS\bin\HolaSDLRelease.exp
+  Generando código
+  All 1576 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Generación de código finalizada
+  HolaSDL.vcxproj -> D:\UNI_2_2\TPV\ASTEROIDS\bin\HolaSDLRelease.exe
